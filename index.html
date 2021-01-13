@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
+    <link href="index.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div id ="container">
+      <header>
+          <h1>How to make tea <i class="fa fa-smile-o" aria-hidden="true"></i></h1>
+          <img src="https://cdn.images.express.co.uk/img/dynamic/11/590x/tea-drinking-health-benefits-792937.jpg"
+          <br>
+          <br>
+          <br>
+          <p1>At the very least, tea is a flavourful way of getting enough fluid into your body each day. On top of that, studies have shown teas can help protect your teeth and your heart.</p1>
+      </header>
+      <section id="ingredients" onmouseover="ingredientsHover()" onmouseout="ingredientsNormal()">
+          <h2>Ingredients <i class="fa fa-coffee" aria-hidden="true"></i></h2>
+          <ul>
+            <li>Tea bag</li>
+            <li>Water</li>
+            <li>Milk - Dairy/Plant-based <em>(optional)</em></li>
+            <li>Sugar/Honey <em>(optional)</em></li>
+          </ul>
+      </section>
+      <section id="preparation" onmouseover="preparationHover()" onmouseout="preparationNormal()">
+          <h2>Preparation <i class="fa fa-check" aria-hidden="true"></i></h2>
+          <ol>
+            <li>Run the tap a little so the water's nicely acrated, and only boil it once to keep the oxygen levels up. Oxygen in water helps flavour!</li>
+            <li>Pop a tea bag into your mug <em>(Always a big mug)</em></li>
+            <li>Pour the hot water over the tea bag and stir briefly.</li>
+            <li>Tea needs time to unlock all its flavour, so give it 3-4 minutes to do its thing. This is the perfect time to grad a sneaky cookie or daydream about vactions.</li>
+            <li>Before removing the tea bag, gently squish it with a spoon against the side of the mug. Not too much or you'll make it bitter</li>
+            <li>If you want, throw some milk or sugar or honey or nothing else at all</li>
+            <li>Enjoy!</li>
+          </ol>
+      </section>
+      <footer>
+          <p>Copyright Me 2018</p>
+      </footer>
+    </div>
+    <script>
+        function ingredientsHover() {
+            document.getElementById('ingredients').firstElementChild.firstElementChild.style.fontSize = '300%';
+        }
+
+
+        function ingredientsNormal() {
+            document.getElementById('ingredients').firstElementChild.firstElementChild.style.fontSize = '100%';
+            // document.write("Normal");
+        }
+
+
+        function preparationHover() {
+            document.getElementById('preparation').firstElementChild.firstElementChild.style.fontSize = '300%';
+        }
+
+
+        function preparationNormal() {
+            document.getElementById('preparation').firstElementChild.firstElementChild.style.fontSize = '100%';
+        }
+    </script>
+  </body>
+</html>
